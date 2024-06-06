@@ -1,18 +1,21 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-}
-.gradiant{
-    height: 100%;
-    width: 100%;
-}
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
 
-/* Fixed Navigation Bar */
-
-.top-nav {
+  .top-nav {
     position: fixed;
     width: 100%;
     /* background-color: #333; */
@@ -24,9 +27,11 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 .img1 {
     margin-left: 10vw;
 }
+
 .top-nav .search-bar {
             display: flex;
             align-items: center;
@@ -52,17 +57,10 @@ body {
     display: inline-block;
 }
 
-/* Main Content */
-.page1 {
-    height: 200vh;
-    padding-top: 80px; /* Space for fixed navbar */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.swiper {
-    width: 100%;
-    height: 100%;
+  .swiper {
+    margin-top: 15vh;
+    width: 90%;
+    height: 50%;
   }
 
   .swiper-slide {
@@ -76,25 +74,64 @@ body {
 
   .swiper-slide img {
     display: block;
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-.footer {
-    background-color: #333;
-    color: #fff;
-    width: 100%;
+.moving-text{
+    white-space: nowrap;
+    overflow-x: auto;
+    margin: 0.5vw 0vw;
+    
+}
+.moving-text::-webkit-scrollbar{
+    display: none;
+}
+.con{
+    display: inline-block;
+    animation: move 2s linear 0s infinite normal;
+    padding: 1vw 0vw;
+}
+.moving-text h1{
+    font-size: 5vw;
+    display: inline-block;
+}
+
+.gola{
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    display: inline-block;
+    margin: 0.8vw;
+}
+
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.swiper1 {
+    width: 30%;
+    height: 30%;
+  }
+
+  .swiper1-slide {
     text-align: center;
-    padding: 1rem 0;
-}
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.footer a {
-    color: white;
-    text-decoration: none;
-    padding: 0 10px;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
+  .swiper1-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
