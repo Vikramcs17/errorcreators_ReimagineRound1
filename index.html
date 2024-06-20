@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="navbar">
         <div class="logo">
-            <img src="Images/logo.avif" alt="">
+            <img src="images/logo.png" height="80px" width="80px" alt="">
         </div>
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Service</a>
-        <a href="">Contact</a>
+        <div class="search">
+            <form class="search1">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div class="one">
+            <a href="#"><select name="navItem">
+                    <option value="0">Home</option>
+                </select></a>
+            <a href="#"><select name="navItem">
+                    <option value="0">About</option>
+                </select></a>
+            <a href="#"><select name="navItem">
+                    <option value="0">Services</option>
+                </select></a>
+            <a href="#"><select name="navItem">
+                    <option value="0">Content</option>
+                </select></a>
+        </div>
+        <div class="login">
+            <p>LOGIN</p>
+        </div>
     </div>
     <div class="page1">
         <div class="E1">
-            <img src="Images/E1.webp" alt="">
+            <img src="images/E1.webp" alt="">
         </div>
         <div class="E1-desc">
             <div >
-                <p class="about-E1">pTron Bassbuds Nyx in-Ear Wireless Headphone </p>
+                <p class="about-E1">pTron Bassbuds Nyx in-Ear <br>Wireless Headphone </p>
                 <p class="available">In Stock</p>
                 <p class="rate">₹ 3,699 </p>
                 <div class="shop">
@@ -114,8 +136,6 @@
          
             </div>
          
-         </div>
-         
          <div class="products-preview">
          
             <div class="preview" data-target="p-1">
@@ -202,4 +222,5 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="script.js"></script>
+
 </html>
