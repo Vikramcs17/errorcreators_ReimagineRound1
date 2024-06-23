@@ -15,7 +15,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
   let preveiwContainer = document.querySelector('.products-preview');
   let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -48,4 +47,3 @@ var swiper = new Swiper(".mySwiper", {
           preveiwContainer.style.display = 'none';
       }
   };
-
