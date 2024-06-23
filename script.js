@@ -15,6 +15,7 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
+
   let preveiwContainer = document.querySelector('.products-preview');
   let previewBox = preveiwContainer.querySelectorAll('.preview');
 
@@ -47,3 +48,48 @@ var swiper = new Swiper(".mySwiper", {
           preveiwContainer.style.display = 'none';
       }
   };
+
+  const container = document.querySelector('.rainbow');
+  const letters = container.querySelectorAll('.letter');
+
+  // Define the start and end colors for the gradient
+  const startColor = { r: 255, g: 0, b: 0 }; // Red
+  const endColor = { r: 0, g: 0, b: 255 };   // Blue
+
+  container.addEventListener('mousemove', (e) => {
+      const rect = container.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const totalLetters = letters.length;
+      const letterWidth = rect.width / totalLetters;
+      const index = Math.floor(x / letterWidth);
+
+      if (index >= 0 && index < totalLetters) {
+          const prevLetter = letters[index - 1];
+          const currentLetter = letters[index];
+          const nextLetter = letters[index + 1];
+
+          const gradientRatio = x / rect.width;
+          const color1 = interpolateColor(startColor, endColor, gradientRatio);
+          const color2 = interpolateColor(startColor, endColor, gradientRatio + 0.1);
+
+          if (prevLetter) prevLetter.style.color = color1;
+          if (currentLetter) currentLetter.style.color = color2;
+          if (nextLetter) nextLetter.style.color = color1;
+      }
+  });
+
+  container.addEventListener('mouseleave', () => {
+      letters.forEach(letter => {
+          letter.style.color = '#000'; // Reset color to original
+      });
+  });
+
+  // Helper function to interpolate between two colors
+  function interpolateColor(color1, color2, ratio) {
+      const r = Math.round(color1.r + (color2.r - color1.r) * ratio);
+      const g = Math.round(color1.g + (color2.g - color1.g) * ratio);
+      const b = Math.round(color1.b + (color2.b - color1.b) * ratio);
+      return `rgb(${r}, ${g}, ${b})`;
+  }
+
+
