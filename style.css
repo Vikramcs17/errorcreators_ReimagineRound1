@@ -662,11 +662,11 @@ rgb(5, 5, 5);
 }
 
 .yt-video{
-  margin-top: 10vw;
+  margin-top: 5vw;
   width: 92vw;
   margin-right: 4vw;
   margin-left: 4vw;
-  height: 90vh;
+  height: 80vh;
 }
 
 .fixed_footer {
@@ -761,9 +761,13 @@ a {
 
 .social-left img {
   padding-left: 2vw;
-  height: 6vw;
-  width: 8vw;
+  height: 2.5vw;
+  width: 3vw;
   margin-top: -0.5vw;
+}
+
+.social-icons img:hover{
+  transform: scale(1.2);
 }
 
 .social-right img {
