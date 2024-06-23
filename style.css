@@ -26,7 +26,7 @@ body{
 }
 
 .wrap-input-18 .search {
- margin-left: 10vw;
+ margin-left: 8vw;
  /* margin: 20px; */
 }
 
@@ -212,16 +212,135 @@ rgb(5, 5, 5);
  transform: translateY(100%);
 }
 
-.page1{
- width: 100%;
- height: 50vw;
- background-color: #fff;
- display: flex;
- justify-content: space-between;
- /* animation: CSSscrollReveal ease-in-out both;
- animation-timeline: view();
- animation-range: entry 50% cover 50%; */
+ .login-preview {
+  position: fixed;
+  top:0; left:0;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0,0,0,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 22;
 }
+
+.login-preview {
+  display: none;
+}
+
+.login-preview.show {
+  display: block; 
+  background-color: #999;
+}
+
+.container-login {
+  background-color: rgb(254, 254, 254);
+  padding: 40px;
+  border-radius: 10px;
+  animation: fadeIn 0.5s ease-in;
+  width: 25rem;
+  margin-left: 33rem;
+  margin-top: 4rem;
+}
+
+.container-login h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 24px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in;
+}
+
+input {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.2s ease-in;
+}
+
+button {
+  background-color: rgba(255, 255, 0, 0.979);
+  color: black;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease-in;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container-login .pass {
+  text-align: center;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.social-buttons-login {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 20px; */
+}
+
+.social-buttons-login button {
+  background-color: #fff;
+  color: #333;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 10px;
+  width: auto;
+  transition: background-color 0.2s ease-in;
+}
+.container-login p{
+  text-align: center;
+}
+
+.social-buttons-login button:hover {
+  background-color: #f7f7f7;
+}
+
+.container-login a {
+  color: #4CAF50;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.container-login a:hover {
+  color: #3e8e41;
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+
+.page1{
+  width: 100%;
+  height: 50vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* animation: CSSscrollReveal ease-in-out both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%; */
+ }
 
 .page1 img{
  margin-top: 8vw;
