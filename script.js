@@ -92,4 +92,11 @@ var swiper = new Swiper(".mySwiper", {
       return `rgb(${r}, ${g}, ${b})`;
   }
 
-
+  document.addEventListener("DOMContentLoaded", function() {
+    const loginButton = document.querySelector(".login button");
+    const loginPreviewContainer = document.querySelector(".login-preview");
+  
+    loginButton.addEventListener("click", function() {
+      loginPreviewContainer.style.display = "block";
+    });
+});
