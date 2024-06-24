@@ -399,6 +399,74 @@ button:hover {
  transform: scale(1.1);
 }
 
+.button2 {
+  --width: 10vw;
+  --height: 9vh;
+  --button-color: #e5c32f;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  /* border-radius: 0.45em; */
+  font-family: "Arial";
+  transition: background 0.3s;
+  margin-top: -1.5vw;
+}
+
+
+.button2::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.button2-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.button2:hover .text {
+  top: -100%;
+}
+
+.button2:hover .icon {
+  top: 0;
+}
+
 .discover:hover{
  transform: scale(1.1);
  cursor: pointer;
@@ -509,7 +577,7 @@ button:hover {
  .view-button button{
  border: none;
  height: 2vw;
- width: 6vw;
+ width: 8vw;
  border-radius: 2vw;
  background-color: #d3f10e;
 }
@@ -535,9 +603,27 @@ button:hover {
 
 .image img{
  /* background: rgb(248, 240, 28); */
- background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%);
+ /* background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%); */
 }
 
+.image4{
+  /* background: #050505; */
+  background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%);
+}
+
+.image1{
+  /* background: linear-gradient(90deg, rgba(38, 163, 10, 0.86) 0%, rgb(8, 248, 112) 100%); */
+  background: url(https://imgs.search.brave.com/42KBmNKFEdhp4ZnTutwefH-os8nbUMfJzuEvXoYyECw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9z/bW9vdGgtZ3JlZW4t/Y29uY3JldGUtd2Fs/bC1iYWNrZ3JvdW5k/XzUzODc2LTEyNDU4/MS5qcGc_c2l6ZT02/MjYmZXh0PWpwZw);
+}
+
+.image2{
+ background: url(https://imgs.search.brave.com/ikwaMOPg4mmdgeU75p1EuyMtoRVfd7vR7mruz3WVvS8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ncmFkaWVudC1i/YWNrZ3JvdW5kLWJy/aWdodC1saWdodC1p/b3MtaW1hZ2UtZ3Jl/ZW4tYmxhY2stc29m/dC1oaWdoLXF1YWxp/dHktanBnXzExNjEx/NjItMzYwNzkuanBn/P3NpemU9NjI2JmV4/dD1qcGc);
+}
+
+.image3{
+  /* background: linear-gradient(to bottom, rgba(228, 111, 65, 0.879) 0%, rgb(247, 250, 249) 100%); */
+  background: url();
+}
 
  .product h3{
  font-size: 1.2vw;
@@ -584,12 +670,10 @@ button:hover {
 .preview{
  display: none;
  flex-direction: column;
- padding:2rem;
  /* text-align: center; */
  background: #fcfbfb;
  position: relative;
- margin:2rem;
- width: 40rem;
+ width: 60vw;
  height: 30rem;
 }
 
@@ -666,25 +750,27 @@ button:hover {
 
  .preview .fa-times{
  position: absolute;
- top:1rem; right:1.5rem;
+ top:0.2rem; right:1.5rem;
  cursor: pointer;
  color:#444;
- font-size: 4rem;
+ font-size: 3rem;
 }
 
 .fa-times:hover{
  transform: rotate(90deg);
 }
 
- .preview h3{
- color:#444;
- padding:.5rem 0;
- font-size: 2rem;
-}
 
  .stars{
+ margin-top:-1vw;
  padding:1rem 0;
  font-size: 1.7rem;
+}
+
+.bcd h4{
+  color: lightgreen;
+  font-size: 2vw;
+  margin-top: -1vw;
 }
 
  .stars i{
@@ -743,6 +829,72 @@ button:hover {
     transform: translateY(0);
   }
 }
+.button1 {
+  --width: 16vw;
+  --height: 3vw;
+  --button-color: #e2fb03;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 2vw;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+
+.button1::after,.button::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button1-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #0f0f0f;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #141313;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+.button1:hover .text {
+  top: -100%;
+}
+
+.button1:hover .icon {
+  top: 0;
+}
+
 .page4{
   height: 150vh;
   width: 100%;
@@ -807,6 +959,57 @@ button:hover {
   /* background-color: #444; */
 }
 
+.page5{
+  /* position: fixed; */
+  height: 100vh;
+  width: 100%;
+  background-color: #444;
+  background-image: url(Images/speakerbg1.png);
+  display: flex;
+  /* justify-content: center; */
+  background-position: center;
+  background-size: 100vw 80vw ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(247, 247, 246);
+}
+.phone{
+  margin-top: 22vw;
+  margin-left: 7vw;
+  width: 20vw;
+  /* mix-blend-mode: overlay; */
+}
+
+.phone img{
+  height: 3vw;
+  
+}
+.bluetooth{
+  margin-left: 30vw;
+  margin-top: -30vw;
+  width: 15vw;
+  /* background-color: #fff; */
+  /* mix-blend-mode: overlay; */
+}
+
+.bluetooth img{
+  height: 3vw;
+  /* margin-top: 10vw; */
+}
+
+.battery{
+  /* background-color: #27ae60; */
+  margin-left: 60vw;
+  width: 20vw;
+  margin-top: 6vw;
+  line-height: 1vw;
+  /* color: white; */
+  /* mix-blend-mode: overlay; */
+}
+
+.battery img{
+  height: 3vw;
+}
 
 .line {
   border: 1px solid #fff;
