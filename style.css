@@ -411,7 +411,8 @@ button:hover {
   /* border-radius: 0.45em; */
   font-family: "Arial";
   transition: background 0.3s;
-  margin-top: -1.5vw;
+  margin-top: -0.5vw;
+  border-radius: 0.5vw;
 }
 
 
@@ -574,12 +575,17 @@ button:hover {
  cursor: pointer;
 }
 
+.view-button{
+  margin-top: -2vw;
+}
  .view-button button{
  border: none;
  height: 2vw;
  width: 8vw;
  border-radius: 2vw;
  background-color: #d3f10e;
+ text-align: center;
+ align-items: center;
 }
 
 .product:hover{
@@ -741,12 +747,12 @@ button:hover {
  color:#fff;
 }
 
-.preview .bcd{
+/* .preview .bcd{
  display: flex;
  flex-direction: column;
  justify-content: space-evenly;
  align-items: center;
-}
+} */
 
  .preview .fa-times{
  position: absolute;
@@ -766,15 +772,25 @@ button:hover {
  padding:1rem 0;
  font-size: 1.7rem;
 }
+.bcd1{
+  color: rgba(26, 25, 25, 0.892);
+  font-size: 1.5vw;
+  margin-top: -1.5vw;
+}
+.bcd h3{
+  padding: 1vw 0;
+  margin-top: 2vw;
+  font-size: 2vw;
+}
 
 .bcd h4{
   color: lightgreen;
-  font-size: 2vw;
-  margin-top: -1vw;
+  font-size: 1.8vw;
+  margin-top: -2vw;
 }
 
  .stars i{
- color:#27ae60;
+ color:#d2ee1d;
 }
 
  .stars span{
@@ -790,9 +806,11 @@ button:hover {
 }
 
  .price{
- padding:1rem 0;
- font-size: 2.5rem;
- color:#27ae60;
+ /* padding:1rem 0; */
+ font-size: 2.7vw;
+ color:#000000;
+ margin-top: -1vw;
+ padding-bottom: 2vw;
 }
 
 @media (max-width:991px){
@@ -896,7 +914,7 @@ button:hover {
 }
 
 .page4{
-  height: 150vh;
+  height: 120vh;
   width: 100%;
   background-color: #fff;
   /* display: flex;
@@ -952,13 +970,6 @@ button:hover {
 
 }
 
-.footer_top {
-  display: flex;
-  /* justify-content: space-between; */
-  margin: 2vw 4vw;
-  /* background-color: #444; */
-}
-
 .page5{
   /* position: fixed; */
   height: 100vh;
@@ -1009,6 +1020,38 @@ button:hover {
 
 .battery img{
   height: 3vw;
+}
+.fixed_footer {
+  width: 100%;
+  height: 600px;
+  background: #050505;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  color: #fff;
+
+}
+
+.beats{
+  width: 20vw;
+  position: absolute;
+  right: 2vw;
+  /* top: 0; */
+  margin-top: -36vw;
+}
+
+.beats h2{
+  margin-top: -1vw;
+}
+.beats img{
+  height: 6vw;
+}
+.footer_top {
+  display: flex;
+  /* justify-content: space-between; */
+  margin: 2vw 4vw;
+  /* background-color: #444; */
 }
 
 .line {
