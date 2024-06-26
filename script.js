@@ -100,3 +100,35 @@ var swiper = new Swiper(".mySwiper", {
       loginPreviewContainer.style.display = "block";
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.menu');
+    const logo = document.querySelector('.logo');
+    const one = document.querySelector('.one');
+    const wrapinput18 = document.querySelector('.wrap-input-18');
+    const logincontainer = document.querySelector('.login-container');
+    const navbar = document.querySelector('.navbar');
+
+    let isVisible = false;
+
+    menu.addEventListener('click', () => {
+        navbar.classList.toggle('navbar-visible');
+        logo.classList.toggle('active');
+        one.classList.toggle('active');
+        wrapinput18.classList.toggle('active');
+        logincontainer.classList.toggle('active');
+        menu.classList.toggle('active');
+
+        isVisible = !isVisible;
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const menuIcon = document.querySelector(".menu");
+    const logo = document.querySelector(".logo-resp");
+  
+    menuIcon.addEventListener("click", function() {
+      logo.style.display = logo.style.display === "none" ? "block" : "none";
+    });
+  });
+  
