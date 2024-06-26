@@ -1008,7 +1008,7 @@ button:hover {
 
 .page5 {
   /* position: fixed; */
-  height: 86vh;
+  height: 120vh;
   /*added by me*/
   width: 100%;
   background-color: #444;
@@ -1518,19 +1518,20 @@ a {
   }
 
   .product {
-    width: calc(50% - 1rem);
+    width: 100%;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
+    column-gap: 3%;
     align-items: center;
     height: auto;
   }
 
   .product img {
-    width: 22vw;
-    height: 39vh;
+    width: 27vw;
+    height: 30vh;
     padding-left: -1vw;
-    margin-left: 1vw;
+    margin-left: 0vw;
     border-radius: 1vw 0 0 1vw;
   }
 
@@ -1544,7 +1545,7 @@ a {
 
 
   .product h3 {
-    font-size: 2vw;
+    font-size: 3vw;
     display: flex;
     justify-content: space-between;
     color: #444;
@@ -1554,6 +1555,31 @@ a {
     /* line-height: 0.5vw; */
   }
 
+  .bluetooth {
+    position: relative;
+    top: -17vh;
+    width: 28vh;
+    }
+  .phone {
+    margin-top: 38vw;
+    margin-left: 7vw;
+    width: 22vw;
+    }
+.battery {
+  /* background-color: #27ae60; */
+  margin-left: 60vw;
+  width: 20vw;
+  margin-top: -7vw;
+}
+.battery img{
+  height: 5vw;
+}
+.beats{
+  margin-top: -47vw;
+}
+.beats img{
+  height: 10vw;
+}
   .stars1 {
     display: none;
   }
@@ -1563,7 +1589,80 @@ a {
     width: 100%;
     border-radius: 1.25rem;
   }
+  .page2 {
+    background-color: #fff;
+    padding-top: 12vh;
 }
+.page3 {
+  padding-top: 2vh;
+}
+.page4 {
+  padding-top: 5vw;
+  height: 100vh;
+  margin-bottom: 75vh;
+}
+.yt-video {
+  height: 75vh;
+}
+.page5 {
+  height: 85vh;
+  width: 100%;
+}
+}
+
+
+@media only screen and (max-width: 991px) {
+.page5{
+  height: 65vw;
+  font-size: 1.5vw;
+}
+.bluetooth{
+  width: 19vw;
+}
+.battery{
+  margin-top: -11vw;
+}
+.beats{
+  margin-top: -51vw;
+}
+.page4{
+  margin-bottom: 60vh;
+}
+.page2{
+  padding-top: 35vw;
+}
+}
+
+/* @media only screen and (max-height: 790px) {
+  .page4 {
+    padding-top: 5vw;
+    height: 95vh;
+    margin-bottom: 75vh;
+  }
+  .fixed_footer {
+    padding-top: 5vw;
+    width: 100vw;
+    height: 65vh;
+  }
+  .page5{
+    height: 77vh;
+    font-size: 1.5vw;
+  }
+  .bluetooth {
+    position: relative;
+    top: -27vh;
+    width: 17vh;
+}
+.bluetooth img {
+  height: 4vw;
+}
+.battery{
+  margin-top: -16vw;
+}
+.beats{
+  margin-top: -55vw;
+}
+} */
 
 
 @media only screen and (max-width: 480px) {
@@ -1717,7 +1816,7 @@ a {
     height: 4vw;
 }
   .bluetooth {
-    margin-top: 7vw;
+    margin-top: 50vw;
     margin-left: 32vw;
     width: 28vw;
     /* mix-blend-mode: overlay; */
@@ -1726,7 +1825,7 @@ a {
     height: 5vw;
   }
   .battery {
-    margin-top: -77vw;
+    margin-top: -120vw;
     margin-left: 60vw;
     width: 27vw;
     /* mix-blend-mode: overlay; */
@@ -1756,7 +1855,7 @@ a {
     padding: 0.5vw 0;
   }
   .beats {
-    margin-top: 9vw;
+    margin-top: 15vw;
         margin-left: 9vw;
         width: 30vw;
         /* padding-right: -2vw; */
