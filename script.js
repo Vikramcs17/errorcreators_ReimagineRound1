@@ -1,3 +1,4 @@
+
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -132,3 +133,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+  var splide = new Splide( '.splide', {
+    type   : 'loop',
+    // padding: '10rem',
+    pagination: false,
+  } );
+  
+  splide.mount();
