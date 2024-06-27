@@ -337,73 +337,86 @@ button:hover {
 }
 
 
-.page1 {
+.page1{
   width: 100%;
-  height: 50vw;
-  background-color: #fff;
+  height: 45vw;
+  background-color: whitesmoke;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   /* animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
   animation-range: entry 50% cover 50%; */
+ }
+
+.page1 {
+  /* height: 100%; */
+   /* height: 100vh;  */
+  overflow: hidden;
+  margin-top: -2rem;
 }
 
-.page1 img {
-  margin-top: 8vw;
-  margin-left: 10vw;
-  height: 40vw;
-  animation: CSSscrollReveal ease-in-out both;
-  animation-timeline: view();
-  animation-range: entry 50% cover 50%;
-}
-
-.E1-desc {
-  margin-right: 0;
-  width: 50%;
-  background-color: #fff;
-  margin-top: 10vw;
+.E-container{
   display: flex;
-  justify-content: start;
+  column-gap: 4rem;
+  background-color: whitesmoke;
+ }
+
+.swiper-parent .image-E img{
+  width: 100%;
+  height: 100%;
+  margin-left: 3vw;
 }
 
-.about-E1 {
-  font-size: 4vw;
-  padding: 2vw 0;
+.image-E img:hover{
+  transform: scale(1.10);
+  transition: 0.5s ease-in;
+}
+
+.desc-E{
+ margin-right: 0;
+ width: 50%;
+ background-color: #fff;
+ display: flex;
+ text-align: start;
+ margin-top: -10rem;
+}
+
+.about-E{
+ font-size: 4vw;
+ padding: 2vw 0;
+}
+
+.available{
+ font-size: 1.5vw;
+ margin-top: -5vw;
+ color: rgb(118, 218, 36); 
+}
+
+.rate{
+ font-size: 3vw;
+ font-weight: 900;
+ color: rgb(10, 10, 10);
+}
+
+.shop{
+ display: flex;
+}
+
+.discover,.add{
+ border: none;
+ padding: 1vw ;
+ font-size: larger;
+ transition: transform .5s ease-in-out;
 
 }
 
-.available {
-  font-size: 1.5vw;
-  margin-top: -5vw;
-  color: rgb(118, 218, 36);
+.discover{
+ background-color: grey;
 }
 
-.rate {
-  font-size: 3vw;
-  font-weight: 900;
-  color: rgb(10, 10, 10);
-}
-
-.shop {
-  display: flex;
-}
-
-.discover,
-.add {
-  border: none;
-  padding: 1vw;
-  font-size: larger;
-  transition: transform .5s ease-in-out;
-
-}
-
-.discover {
-  background-color: grey;
-}
-
-.add {
-  background-color: rgb(241, 181, 42);
-  transform: scale(1.1);
+.add{
+ background-color: rgb(241, 181, 42);
+ transform: scale(1.1);
 }
 
 .button2 {
@@ -423,8 +436,7 @@ button:hover {
 }
 
 
-.button2::after,
-.button::before {
+.button2::after,.button::before {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
@@ -437,9 +449,7 @@ button:hover {
   font-size: large;
 }
 
-.button2-wrapper,
-.text,
-.icon {
+.button2-wrapper,.text,.icon {
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -452,8 +462,7 @@ button:hover {
   top: 0
 }
 
-.text,
-.icon {
+.text,.icon {
   transition: top 0.5s;
 }
 
@@ -479,14 +488,109 @@ button:hover {
   top: 0;
 }
 
-.discover:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+.discover:hover{
+ transform: scale(1.1);
+ cursor: pointer;
 }
 
-.add:hover {
-  transform: scale(1);
+.add:hover{
+ transform: scale(1);
 }
+
+ .image-E, .desc-E {
+  animation: diagonalAnimation 0.5s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.swiper-slide-active .image-E {
+  animation-name: diagonalAnimationActive;
+}
+
+.swiper-slide-active .desc-E {
+  animation-name: diagonalAnimationActiveReverse;
+}
+
+.swiper-slide-next .image-E {
+  animation-name: diagonalAnimationNext;
+}
+
+.swiper-slide-next .desc-E {
+  animation-name: diagonalAnimationNextReverse;
+}
+
+.swiper-slide-prev .image-E {
+  animation-name: diagonalAnimationPrev;
+}
+
+.swiper-slide-prev .desc-E {
+  animation-name: diagonalAnimationPrevReverse;
+}
+
+@keyframes diagonalAnimationActive {
+  0% {
+    transform: translateY(-100%) translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalAnimationActiveReverse {
+  0% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalAnimationNext {
+  0% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%) translateX(50%);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalAnimationNextReverse {
+  0% {
+    transform: translateY(-100%) translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalAnimationPrev {
+  0% {
+    transform: translateY(-100%) translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 1;
+  }
+}
+
+@keyframes diagonalAnimationPrevReverse {
+  0% {
+    transform: translateY(100%) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100%) translateX(50%);
+    opacity: 1;
+  }
+} 
 
 
 .page2 {
@@ -499,7 +603,7 @@ button:hover {
 
 .swiper {
   /* margin-top: 15vh; */
-  width: 90%;
+  width: 85%;
   height: 50%;
 }
 
@@ -593,6 +697,8 @@ button:hover {
 
 .view-button {
   margin-top: -2vw;
+  display: flex;
+  justify-content: center;
 }
 
 .view-button button {
@@ -607,7 +713,7 @@ button:hover {
 
 /* added by me  */
 .Qv {
-  text-align: center;
+  /* text-align: center; */
   font-size: 15px;
   padding: 10px 20px;
   cursor: pointer;
@@ -979,6 +1085,7 @@ button:hover {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  margin-top: 3.5rem;
   transition: transform 0.3s ease-out, color 0.3s ease-out;
 }
 
@@ -987,7 +1094,7 @@ button:hover {
 }
 
 .yt-video {
-  margin-top: 5vw;
+  margin-top: 4vw;
   width: 92vw;
   margin-right: 4vw;
   margin-left: 4vw;
@@ -1008,7 +1115,7 @@ button:hover {
 
 .page5 {
   /* position: fixed; */
-  height: 120vh;
+  height: 100vh;
   /*added by me*/
   width: 100%;
   background-color: #444;
@@ -1031,7 +1138,11 @@ button:hover {
 
 .phone img {
   height: 3vw;
+}
 
+.phone img:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 .bluetooth {
@@ -1047,6 +1158,12 @@ button:hover {
   /* margin-top: 10vw; */
 }
 
+.bluetooth
+ img:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
 .battery {
   /* background-color: #27ae60; */
   margin-left: 60vw;
@@ -1059,6 +1176,11 @@ button:hover {
 
 .battery img {
   height: 3vw;
+}
+
+.battery img:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 
 .fixed_footer {
@@ -1089,6 +1211,11 @@ button:hover {
   height: 6vw;
 }
 
+.beats img:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+}
+
 
 .page6{
   height: 100vh;
@@ -1099,13 +1226,15 @@ button:hover {
 
 .page6 .wearables{
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   font-size: 4vw;
-  margin-left: 3vw;
 }
-.page6 .wearables:hover{
-  text-decoration: underline;
-}
+
+/* .page6 .wearables:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+} */
+
 .splide__slide{
   height: 90vh;
   /* background-color: #3e8e41; */
@@ -1184,11 +1313,17 @@ button:hover {
 }
 
 .page7 h1{
-  padding: 2vw;
+  margin-top: 2rem; 
+  padding: 3vw;
   display: flex;
   justify-content: center;
-  text-decoration: underline;
+  font-size: 2.5rem;
 }
+
+/* .page7 h1:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+} */
 
 .blog-containers{
   display: flex;
@@ -1225,9 +1360,10 @@ button:hover {
   font-size: 3vw;
 }
 
-.page7 h2:hover{
-  text-decoration: underline;
-}
+/* .page7 h2:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+} */
 
 .news{
   display: flex;
@@ -1261,12 +1397,15 @@ button:hover {
   display: flex;
   /* justify-content: space-between; */
   margin: 2vw 4vw;
+  width: 100%;
   /* background-color: #444; */
 }
 
 .line {
-  border: 1px solid #fff;
+  height: 1px;
   width: 100%;
+  background-color: white;
+  box-shadow: 0px 1px 0px white;
 }
 
 .footer-logo {
