@@ -124,35 +124,35 @@ document.addEventListener('click', (event) => {
   });
   
   
-  document.addEventListener('DOMContentLoaded', () => {
-    const menu = document.querySelector('.menu');
-    const logo = document.querySelector('.logo');
-    const one = document.querySelector('.one');
-    const wrapinput18 = document.querySelector('.wrap-input-18');
-    const logincontainer = document.querySelector('.login-container');
-    const navbar = document.querySelector('.navbar');
+//   document.addEventListener('DOMContentLoaded', () => {
+//     const menu = document.querySelector('.menu');
+//     const logo = document.querySelector('.logo');
+//     const one = document.querySelector('.one');
+//     const wrapinput18 = document.querySelector('.wrap-input-18');
+//     const logincontainer = document.querySelector('.login-container');
+//     const navbar = document.querySelector('.navbar');
   
-    let isVisible = false;
+//     let isVisible = false;
   
-    menu.addEventListener('click', () => {
-        navbar.classList.toggle('navbar-visible');
-        logo.classList.toggle('active');
-        one.classList.toggle('active');
-        wrapinput18.classList.toggle('active');
-        logincontainer.classList.toggle('active');
-        menu.classList.toggle('active');
+//     menu.addEventListener('click', () => {
+//         navbar.classList.toggle('navbar-visible');
+//         logo.classList.toggle('active');
+//         one.classList.toggle('active');
+//         wrapinput18.classList.toggle('active');
+//         logincontainer.classList.toggle('active');
+//         menu.classList.toggle('active');
   
-        isVisible = !isVisible;
-    });
-  });
-  document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.querySelector(".menu");
-    const logo = document.querySelector(".logo-resp");
+//         isVisible = !isVisible;
+//     });
+//   });
+//   document.addEventListener("DOMContentLoaded", function() {
+//     const menuIcon = document.querySelector(".menu");
+//     const logo = document.querySelector(".logo-resp");
   
-    menuIcon.addEventListener("click", function() {
-      logo.style.display = logo.style.display === "none" ? "block" : "none";
-    });
-  });
+//     menuIcon.addEventListener("click", function() {
+//       logo.style.display = logo.style.display === "none" ? "block" : "none";
+//     });
+//   });
   
   var splide = new Splide( '.splide', {
       type   : 'loop',
@@ -164,3 +164,29 @@ document.addEventListener('click', (event) => {
     } );
     
     splide.mount();
+
+    // Added by me
+    function toggleNav() {
+        var sidenav = document.getElementById("mySidenav");
+        if (sidenav.style.width === "0px" || sidenav.style.width === "") {
+            sidenav.style.width = "300px";
+        } else {
+            sidenav.style.width = "0px";
+        }
+    }
+    
+    function openLoginPopup() {
+        document.getElementById("loginModal").style.display = "block";
+    }
+    
+    function closeLoginPopup() {
+        document.getElementById("loginModal").style.display = "none";
+    }
+    
+    // Optional: To close the modal when clicking outside of it
+    window.onclick = function(event) {
+        var modal = document.getElementById("loginModal");
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
