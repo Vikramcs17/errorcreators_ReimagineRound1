@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  font-family: "Raleway", sans-serif;
+
 }
 
 .navbar {
@@ -394,8 +396,10 @@ button:hover {
 
 .rate{
  font-size: 3vw;
- font-weight: 900;
- color: rgb(10, 10, 10);
+ font-weight: 700;
+ color: #000;
+ /* font-family: "Roboto", sans-serif; */
+ font-family: "Noto Serif", serif; 
 }
 
 .shop{
@@ -801,8 +805,7 @@ button:hover {
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 22;
-
+  z-index: 1000;
 }
 
 .preview {
@@ -880,12 +883,6 @@ button:hover {
   color: #fff;
 }
 
-/* .preview .bcd{
- display: flex;
- flex-direction: column;
- justify-content: space-evenly;
- align-items: center;
-} */
 
 .preview .fa-times {
   position: absolute;
@@ -945,10 +942,15 @@ button:hover {
   /* padding:1rem 0; */
   font-size: 2.7vw;
   color: #000000;
+  font-weight: 600;
   margin-top: -1vw;
   padding-bottom: 2vw;
+  font-family: "Noto Sans", sans-serif;
 }
 
+.product-rate{
+  font-family: "Noto Sans", sans-serif;
+}
 @media (max-width:991px) {
 
   html {
@@ -1276,11 +1278,12 @@ button:hover {
 .shop-now{
   display: flex;
 }
+
 .box-heading svg{
   height: 2vw;
   width: 2vw;
   margin-left: 1vw;
-  margin-top: 1.5vw;
+  margin-top: 1vw;
 }
 .box-desc{
   height: 40vh;
@@ -1299,6 +1302,11 @@ button:hover {
   /* background: linear-gradient(to top right,#c434f5,#f3d3d300); */
   background-size: 100vh ;
   background-repeat: no-repeat;
+}
+
+.watch-rate{
+  font-family: "Noto Sans", sans-serif;
+  font-size: 3vw;
 }
 .watch-img img{
   height: 70vh;
@@ -1347,6 +1355,7 @@ button:hover {
 }
 
 .blog h4{
+  font-size: 1.2vw;
   padding: 0vw 1vw;
 }
 .blog:hover{
