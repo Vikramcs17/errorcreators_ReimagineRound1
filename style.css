@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin:0;
   padding: 0;
   position: relative;
   font-family: "Raleway", sans-serif;
@@ -14,6 +14,7 @@ body {
   height: 12vh;
   justify-content: space-around;
   z-index: 20;
+  padding-top: 2rem;
   background-color: whitesmoke;
 }
 
@@ -219,11 +220,10 @@ body {
 
 .login-preview {
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0; left:0;
   min-height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0,0,0,.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,7 +235,7 @@ body {
 }
 
 .login-preview.show {
-  display: block;
+  display: block; 
   background-color: #999;
 }
 
@@ -306,8 +306,7 @@ button:hover {
   width: auto;
   transition: background-color 0.2s ease-in;
 }
-
-.container-login p {
+.container-login p{
   text-align: center;
 }
 
@@ -345,6 +344,7 @@ button:hover {
   background-color: whitesmoke;
   display: flex;
   flex-direction: column;
+  padding-top: 5rem;
   /* animation: CSSscrollReveal ease-in-out both;
   animation-timeline: view();
   animation-range: entry 50% cover 50%; */
@@ -795,41 +795,40 @@ button:hover {
   color: #999;
 }
 
-.products-preview {
+.products-preview{
   position: fixed;
-  top: 0;
-  left: 0;
+  top:0; left:0;
   min-height: 100vh;
   width: 100%;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0,0,0,.8);
   display: none;
   align-items: center;
   justify-content: center;
-  z-index: 1000;
-}
-
-.preview {
+  z-index: 22;
+  
+ }
+ .preview{
   display: none;
   flex-direction: column;
+  padding:2rem;
   /* text-align: center; */
   background: #fcfbfb;
   position: relative;
-  width: 60vw;
+  margin:2rem;
+  width: 40rem;
   height: 30rem;
-}
-
-.preview .image {
+ }
+  .preview .image{
   /* background: rgb(238,174,202); */
   /* background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(233,233,148,1) 100%); */
   width: 16rem;
-}
-
-.preview.active {
+ }
+  .preview.active{
   display: flex;
   flex-direction: row;
   animation-name: animate-pop-from-right;
   animation-duration: .5s;
-}
+ }
 
 @keyframes animate-pop-from-right {
   0% {
@@ -1117,7 +1116,7 @@ button:hover {
 
 .page5 {
   /* position: fixed; */
-  height: 120vh;
+  height: 100vh;
   /*added by me*/
   width: 100%;
   background-color: #444;
@@ -2500,5 +2499,4 @@ button:hover {
     margin-top: -8vw;
 }
 }
-
 
