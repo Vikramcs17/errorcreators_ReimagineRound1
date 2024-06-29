@@ -182,6 +182,14 @@ var splide = new Splide( '.splide', {
   function closeLoginPopup() {
       document.getElementById("loginModal").style.display = "none";
   }
+
+  function openLoginPopup() {
+    document.getElementById("loginnModal").style.display = "block";
+}
+
+function closeLoginPopup() {
+    document.getElementById("loginnModal").style.display = "none";
+}
   
   // Optional: To close the modal when clicking outside of it
   window.onclick = function(event) {
