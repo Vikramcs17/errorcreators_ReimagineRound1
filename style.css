@@ -770,10 +770,14 @@ button:hover {
   border-top-right-radius: 1vw;
   box-shadow: 0 .5rem 1rem rgba(5, 4, 4, 0.1);
 }
-
 .image {
-  height: 19rem;
+  height: 20vw;
   width: 22vw;
+}
+
+.image img{
+  height: 15vw;
+  width: 15vw;
 }
 
 .image4 {
@@ -788,7 +792,7 @@ button:hover {
 .image1 {
   /* background: linear-gradient(90deg, rgba(38, 163, 10, 0.86) 0%, rgb(8, 248, 112) 100%); */
   background: url(Images/earphonesbg.jpg);
-  /* background-size: vw; */
+  background-size: 22vw 23vw;
   background-repeat: no-repeat;
 }
 
