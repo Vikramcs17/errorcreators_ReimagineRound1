@@ -752,28 +752,40 @@ button:hover {
   box-shadow: 0 .5rem 1rem rgba(5, 4, 4, 0.1);
 }
 
-.image img {
-  /* background: rgb(248, 240, 28); */
-  /* background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%); */
+.image {
+  height: 19rem;
+  width: 22vw;
 }
 
 .image4 {
   /* background: #050505; */
-  background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%);
+  /* background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%); */
+  background: url(Images/earphonesbg4.jpg);
+  background-repeat: no-repeat;
+  background-size: 23vw 22vw;
 }
+
 
 .image1 {
   /* background: linear-gradient(90deg, rgba(38, 163, 10, 0.86) 0%, rgb(8, 248, 112) 100%); */
-  background: url(https://imgs.search.brave.com/42KBmNKFEdhp4ZnTutwefH-os8nbUMfJzuEvXoYyECw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9z/bW9vdGgtZ3JlZW4t/Y29uY3JldGUtd2Fs/bC1iYWNrZ3JvdW5k/XzUzODc2LTEyNDU4/MS5qcGc_c2l6ZT02/MjYmZXh0PWpwZw);
+  background: url(Images/earphonesbg.jpg);
+  /* background-size: vw; */
+  background-repeat: no-repeat;
 }
 
+
+
 .image2 {
-  background: url(https://imgs.search.brave.com/ikwaMOPg4mmdgeU75p1EuyMtoRVfd7vR7mruz3WVvS8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9ncmFkaWVudC1i/YWNrZ3JvdW5kLWJy/aWdodC1saWdodC1p/b3MtaW1hZ2UtZ3Jl/ZW4tYmxhY2stc29m/dC1oaWdoLXF1YWxp/dHktanBnXzExNjEx/NjItMzYwNzkuanBn/P3NpemU9NjI2JmV4/dD1qcGc);
+  background: url(Images/earphonesbg2.jpg);
+  background-repeat: no-repeat;
+  background-size: 22vw 22vw;
 }
 
 .image3 {
   /* background: linear-gradient(to bottom, rgba(228, 111, 65, 0.879) 0%, rgb(247, 250, 249) 100%); */
-  background: url();
+  background: url(Images/earphonesbg3.jpg);
+  background-repeat: no-repeat;
+  background-size: 25vw 19vw;
 }
 
 .product h3 {
