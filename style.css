@@ -764,20 +764,16 @@ button:hover {
 
 .product img {
   object-fit: cover;
-  width: 22vw;
-  height: 19rem;
+  width: 10vw;
+  height: 14rem;
   border-top-left-radius: 1vw;
   border-top-right-radius: 1vw;
   box-shadow: 0 .5rem 1rem rgba(5, 4, 4, 0.1);
 }
-.image {
-  height: 20vw;
-  width: 22vw;
-}
 
-.image img{
-  height: 15vw;
-  width: 15vw;
+.image {
+  height: 19rem;
+  width: 22vw;
 }
 
 .image4 {
@@ -792,7 +788,7 @@ button:hover {
 .image1 {
   /* background: linear-gradient(90deg, rgba(38, 163, 10, 0.86) 0%, rgb(8, 248, 112) 100%); */
   background: url(Images/earphonesbg.jpg);
-  background-size: 22vw 23vw;
+  /* background-size: vw; */
   background-repeat: no-repeat;
 }
 
@@ -1932,11 +1928,11 @@ LOGIN POPUP AND BUTTON  */
     cursor: pointer;
     font-size: 16px;
   }
-
+  
   .login-modal {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
@@ -1951,7 +1947,7 @@ LOGIN POPUP AND BUTTON  */
     padding: 5vh;
     border: 1px solid #888;
     width: 40vw;
-    height: 57vh;
+    height: 67vh;
     text-align: center;
     position: relative;
     border-radius: 4vh;
