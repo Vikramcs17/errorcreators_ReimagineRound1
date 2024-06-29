@@ -231,6 +231,25 @@ body {
   z-index: 22;
 }
 
+.login-close {
+  color: black;
+  float: right;
+  font-size: 10vh;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  top: -4vh;
+  right: -1vw;
+  z-index: 20;
+}
+
+.login-close:hover,
+.login-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .login-preview {
   display: none;
 }
@@ -1140,7 +1159,7 @@ button:hover {
 
 .page5 {
   /* position: fixed; */
-  height: 120vh;
+  height: 100vh;
   /*added by me*/
   width: 100%;
   background-color: #444;
