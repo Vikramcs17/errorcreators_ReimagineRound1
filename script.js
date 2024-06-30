@@ -46,7 +46,7 @@ document.querySelectorAll('.products-container .product').forEach(product => {
           if (name === target) {
               preview.classList.add('active');
           } else {
-              preview.classList.remove('active'); // Ensure only the selected preview is active
+              preview.classList.remove('active'); 
           }
       });
   };
@@ -54,13 +54,12 @@ document.querySelectorAll('.products-container .product').forEach(product => {
 
 previewBoxes.forEach(preview => {
   preview.querySelector('.fa-times').onclick = (event) => {
-      event.stopPropagation(); // Prevent the click from bubbling to the previewContainer
+      event.stopPropagation(); 
       preview.classList.remove('active');
       previewContainer.style.display = 'none';
   };
 });
 
-// Add event listener to close the preview when clicking outside of it
 document.addEventListener('click', (event) => {
   if (!event.target.closest('.preview') && !event.target.closest('.product')) {
       previewBoxes.forEach(preview => {
@@ -124,36 +123,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-//   document.addEventListener('DOMContentLoaded', () => {
-//     const menu = document.querySelector('.menu');
-//     const logo = document.querySelector('.logo');
-//     const one = document.querySelector('.one');
-//     const wrapinput18 = document.querySelector('.wrap-input-18');
-//     const logincontainer = document.querySelector('.login-container');
-//     const navbar = document.querySelector('.navbar');
-
-//     let isVisible = false;
-
-//     menu.addEventListener('click', () => {
-//         navbar.classList.toggle('navbar-visible');
-//         logo.classList.toggle('active');
-//         one.classList.toggle('active');
-//         wrapinput18.classList.toggle('active');
-//         logincontainer.classList.toggle('active');
-//         menu.classList.toggle('active');
-
-//         isVisible = !isVisible;
-//     });
-//   });
-//   document.addEventListener("DOMContentLoaded", function() {
-//     const menuIcon = document.querySelector(".menu");
-//     const logo = document.querySelector(".logo-resp");
-
-//     menuIcon.addEventListener("click", function() {
-//       logo.style.display = logo.style.display === "none" ? "block" : "none";
-//     });
-//   });
-
 var splide = new Splide( '.splide', {
     type   : 'loop',
     // padding: '10rem',
@@ -179,7 +148,7 @@ var splide = new Splide( '.splide', {
       document.getElementById("loginModal").style.display = "block";
   }
   
-  function closeLoginPopup() {
+  function closeLoginPopups() {
       document.getElementById("loginModal").style.display = "none";
   }
 
