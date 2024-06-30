@@ -1655,8 +1655,8 @@ a {
 
   /* SIDENAV  */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #F5F5F5;
+  color: rgb(11, 11, 11);
   padding: 10px;
   padding-bottom: 20px;
   font-size: 20px;
@@ -1906,9 +1906,15 @@ LOGIN POPUP AND BUTTON  */
     background-color: black;
     color: white;
     border: none;
-    padding: 10px 20px;
+    height: 5vw;
+    width: 9vw;
+    /* padding: 2px 2px; */
     cursor: pointer;
-    font-size: 16px;
+  }
+
+  .btn-44 span{
+    font-size: 2vw ;
+    align-items: center;
   }
   
   .login-modal {
@@ -2023,7 +2029,6 @@ LOGIN POPUP AND BUTTON  */
     text-decoration: underline;
   }
 
-
   .navbar {
     display: flex;
     flex-direction: column;
@@ -2042,24 +2047,6 @@ LOGIN POPUP AND BUTTON  */
     position: absolute;
     top: 4vh;
     left: 3vw;
-  }
-
-
-  .btn-44 {
-    /* margin-left: 15vw; */
-    border: 1px solid;
-    border-radius: 999px;
-    box-sizing: border-box;
-    display: block;
-    overflow: hidden;
-    padding: 0.5rem 1rem;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 3.5vh;
-    margin-top: 0vh;
-    /* /modified */
-    /* bottom: 3vh;
-        left: -2.35vw; */
   }
 
   .wrap-input-18 {
