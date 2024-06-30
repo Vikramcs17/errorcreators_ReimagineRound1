@@ -774,38 +774,14 @@ button:hover {
 .image {
   height: 19rem;
   width: 22vw;
+  
 }
 
-.image4 {
-  /* background: #050505; */
-  /* background: linear-gradient(90deg, rgb(35, 38, 38) 0%, rgb(168, 175, 175) 100%); */
-  background: url(Images/earphonesbg4.jpg);
-  background-repeat: no-repeat;
-  background-size: 23vw 22vw;
-}
+ .image img{
+  height: 100%;
+  width: 100%;
+ }
 
-
-.image1 {
-  /* background: linear-gradient(90deg, rgba(38, 163, 10, 0.86) 0%, rgb(8, 248, 112) 100%); */
-  background: url(Images/earphonesbg.jpg);
-  /* background-size: vw; */
-  background-repeat: no-repeat;
-}
-
-
-
-.image2 {
-  background: url(Images/earphonesbg2.jpg);
-  background-repeat: no-repeat;
-  background-size: 22vw 22vw;
-}
-
-.image3 {
-  /* background: linear-gradient(to bottom, rgba(228, 111, 65, 0.879) 0%, rgb(247, 250, 249) 100%); */
-  background: url(Images/earphonesbg3.jpg);
-  background-repeat: no-repeat;
-  background-size: 25vw 19vw;
-}
 
 .product h3 {
   font-size: 1.2vw;
@@ -1597,6 +1573,10 @@ a {
 }
 
 @media only screen and (max-width: 1465px) {
+
+  .navbar1{
+    display: none;
+  }
   .swiper-parent .image-E img{
   margin-bottom: 15vh;
   z-index: 20;
