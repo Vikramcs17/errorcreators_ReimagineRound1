@@ -3784,7 +3784,7 @@ flex: 1 1 calc(100% - 20px);
 
    .p1{
     height: 55vh;
-    width: 80vw;
+    width: 85vw;
   }
 
   .bcd{
@@ -3883,7 +3883,7 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .button2-wrapper .icon .bi{
-    margin-top: 1rem;
+    margin-top: 0.8rem;
   }
 
 
