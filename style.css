@@ -3885,7 +3885,7 @@ flex: 1 1 calc(100% - 20px);
 }
 
 .battery{
-  margin-top: -68rem;
+  margin-top: -72rem;
   width: 20rem;
 }
 
@@ -3900,7 +3900,6 @@ flex: 1 1 calc(100% - 20px);
 .beats{
   margin-top: 6rem;
 }
-
 
 
 }
