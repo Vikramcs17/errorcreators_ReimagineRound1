@@ -1,4 +1,4 @@
 Ptron Website 
 
-The Reimagine Hackathon project was created by Vikram, Sahil, Jay and Himanshu. 
+This Reimagine Hackathon project is created by Vikram, Sahil, Jay and Himanshu. 
 
