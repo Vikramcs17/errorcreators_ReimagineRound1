@@ -3901,6 +3901,10 @@ flex: 1 1 calc(100% - 20px);
   margin-top: 6rem;
 }
 
+.bluetooth h3{
+  width:3rem;
+}
+
 
 
 }
