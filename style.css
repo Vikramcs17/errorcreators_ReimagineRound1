@@ -922,6 +922,14 @@ button:hover {
   margin-top: -1.5vw;
 }
 
+.p1 .bcd h2{
+  margin-top: 4rem;
+}
+
+.p1 .bcd h5{
+  margin-top: 3rem;
+}
+
 .bcd h3 {
   padding: 1vw 0;
   margin-top: 2vw;
@@ -2441,6 +2449,11 @@ LOGIN POPUP AND BUTTON  */
   .swiper-parent .image-E img{
     margin-bottom: 10vh;
   }
+
+  .button1{
+    margin-top: 0.5rem;
+  }
+
   .swiper-slide img{
     padding-top: 7vh;
   }
@@ -2662,7 +2675,7 @@ flex: 1 1 calc(100% - 20px);
   width: 100%;
   height: 100%;
   left: 0;
-  color: #fff;
+  color: black;
 }
 
 
@@ -2714,6 +2727,18 @@ flex: 1 1 calc(100% - 20px);
       /* text-align: center; */
  }
 
+ .button1{
+  margin-top: 0.5rem;
+ }
+
+ .button1-wrapper .text{
+  color: #000;
+ }
+
+ .bi{
+  color: #000;
+ }
+
  .discover {
   display: flex;
   align-items: center;
@@ -2724,6 +2749,15 @@ flex: 1 1 calc(100% - 20px);
   padding: 2vw;
   margin: 1vw 0;
   font-size: 2.8vw;
+}
+
+.button2-wrapper .text{
+  color: #000;
+  margin-top: -3rem;
+}
+
+.button2-wrapper .icon .bi{
+  margin-top: -4.5rem;
 }
 
 .btn-44{
@@ -2738,6 +2772,18 @@ flex: 1 1 calc(100% - 20px);
 
 .swiper-parent{
   margin-top: 5rem;
+}
+
+.bcd{
+  margin-top: 8rem;
+}
+
+.bcd h6{
+  font-size: 2rem;
+}
+
+.bcd h5{
+  font-size: 2rem;
 }
 
 
@@ -2856,13 +2902,19 @@ flex: 1 1 calc(100% - 20px);
     /* text-align: center; */
   }
 
+  .button2-wrapper .text{
+    color: #000;
+    margin-top: -1rem;
+  }
+
   .available{
     font-size: 4vw;
   }
 
-  .icon {
-    left: 2vw;
+  .button2-wrapper .icon .bi{
+    left: 1.5vw;
     margin-top: -0.5vh;
+    color: #000;
   }
 
   .discover {
@@ -3277,9 +3329,10 @@ flex: 1 1 calc(100% - 20px);
 
   .bcd{
     /* background: #c1ce07; */
-    width: 80vw;
+    width: 60vw;
     margin-left: -3vw;
     margin-right: 1vw;
+    margin-top: 5rem;
   }
 
   .abc{
@@ -3293,6 +3346,28 @@ flex: 1 1 calc(100% - 20px);
   .button1-wrapper .text{
     margin-top: 0.4rem;
     margin-left: 0.2rem;
+  }
+
+  .p1 .bcd h2{
+    font-size: 3rem;
+  }
+
+  .p1 .bcd h5{
+    font-size: 2rem;
+  }
+
+  .p2 .bcd h6{
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .p3 .bcd h6{
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+
+  .p4 .bcd h5{
+  font-size: 2rem;
   }
 
   .button1-wrapper .icon{
@@ -3707,8 +3782,9 @@ flex: 1 1 calc(100% - 20px);
   margin-top: 6rem;
 }
 
-   .preview{
-    height: 35vh;
+   .p1{
+    height: 55vh;
+    width: 80vw;
   }
 
   .bcd{
@@ -3804,6 +3880,10 @@ flex: 1 1 calc(100% - 20px);
   .button1-wrapper .icon{
     height: 8vw;
     margin-top: -0.4rem;
+  }
+
+  .button2-wrapper .icon .bi{
+    margin-top: 1rem;
   }
 
 
