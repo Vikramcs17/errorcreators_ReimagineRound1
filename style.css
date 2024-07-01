@@ -2598,8 +2598,8 @@ flex: 1 1 calc(100% - 20px);
 }
 
 .page7 {
-  margin-bottom: 75vh;
-  height: 155vh;
+  margin-bottom: 60vh;
+  height: 145vh;
 }
   .page5 {
     height: 65vw;
@@ -3330,7 +3330,7 @@ flex: 1 1 calc(100% - 20px);
 
   .page7 {
     margin-bottom: 90vh;
-    height: 140vh;
+    height: 135vh;
   }
   .audio svg{
   /* background-color: #fff; */
