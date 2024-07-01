@@ -3586,6 +3586,24 @@ flex: 1 1 calc(100% - 20px);
     margin-left: -1vw;
     font-size: 3vw;
   }
+
+  .login-modal-content{
+    margin-top: 20rem;
+    height: 55vh;
+    width: 65vw;
+  }
+
+  .social-buttons-login .fa{
+    font-size: 12px;
+  }
+
+  .container-login ::placeholder{
+    font-size: large;
+  }
+
+  .container-login button{
+    font-size: large;
+  }
   
   .button2-wrapper,
   .text,
