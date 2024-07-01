@@ -2100,7 +2100,7 @@ LOGIN POPUP AND BUTTON  */
   height: 130vh;
 } */
   .container {
-    height: 109vh;
+    height: 80vh;
   }
 
   .fixed_footer {
@@ -2115,11 +2115,12 @@ LOGIN POPUP AND BUTTON  */
     justify-content: center;
     /* position: absolute; */
     left: 4vw;
+    height:40vh;
   }
 
   .product {
     width: 100%;
-    margin-bottom: 10rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
     column-gap: 3%;
@@ -2355,11 +2356,11 @@ LOGIN POPUP AND BUTTON  */
     font-size: 1.5vw;
   }
   .container{
-    height: 80vh;
+    height: 75vh;
   }
   .products-container{
     padding: 0 3rem;
-    height: 70vh;
+    height: 60vh;
   }
   .product{
     margin-bottom: 0rem;
