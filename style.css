@@ -3634,6 +3634,10 @@ flex: 1 1 calc(100% - 20px);
     margin-left: -9vw;
     margin-right: 1vw;
   }
+
+  .bcd h2{
+    font-size: 4vw;
+  }
   
   .bcd h3{
     font-size: 5vw;
