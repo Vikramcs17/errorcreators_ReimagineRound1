@@ -1761,128 +1761,16 @@ header {
 .audio{
   display: flex;
   flex-direction: row;
-  align-content: center;
-}
-.smart-wearables{
-  display: flex;
-  flex-direction: row;
-
-}
-.smart-wearables svg{
-  position: relative;
-  width: 11vw;
-  height: 5vh;
-  left: 1vw;
-}
-.audio svg{
-  position: relative;
-  width: 11vw;
-  height: 5vh;
-  left: 1vw;
-  /* background: #000; */
-}
-.power svg{
-  position: relative;
-  width: 11vw;
-  height: 5vh;
-  left: 1vw;
+  /* align-content: center; */
 }
 .power{
   display: flex;
   flex-direction: row;
 }
-.one5 {
+.smart-wearables{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-direction: row;
 }
-
-.one5 .dropdown {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  color: #818181;
-  /* background: #fff; */
-  width: 32vw;
-  height: 5vh;
-  /* justify-content: center; */
-  /* padding: 30px 8px 0px 0px; */
-  text-decoration: none;
-  font-size: 25px;
-  transition: 0.3s;
-  margin-top: 2vh;
-}
-
-.one5 h4{
-  font-size: 1.7vw;
-  margin-left: -2vw;
-  margin-top: -0.5vw;
-}
-
-.audio h4{
-  height: 3vh;
-  width: 10vw;
-  margin-top: 1vw ;
-}
-
-.audio svg{
-  height: 3vh;
-  width: 10vw;
-  /* margin-left: -0.2vw; */
-}
-
-.power svg{
-  height: 3vh;
-  width: 10vw;
-}
-
-.smart-wearables svg{
-  height: 3vh;
-  width: 10vw;
-}
-
-.one5 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #fff;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
- z-index: 1;
- /* margin-left: 5vw; */
-}
-
-.one5 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.audio-content{
-  padding: 15vw;
-} 
-
-.one5 .dropdown-content a:hover {
-  background-color: #d3fc06;
-  color: #000;
-}
-
-.one5 .dropdown:hover .dropdown-content {
-  display: block;
-  z-index: 20;
-}
-
-/* .dropdown svg{
-  width: 50vw;
-  padding: 1vw;
-  height: 10vh;
-  background-color: #333;
-}
-LOGIN POPUP AND BUTTON  */
-
 .power-line{
   width: 100%;
   border: 2px solid white;
@@ -2316,7 +2204,6 @@ LOGIN POPUP AND BUTTON  */
 
   .page7 {
     margin-top: -3vw;
-    height: 125vh; 
   }
 
   .blog {
@@ -2599,8 +2486,8 @@ flex: 1 1 calc(100% - 20px);
 }
 
 .page7 {
-  margin-bottom: 60vh;
-  height: 145vh;
+  margin-bottom: 75vh;
+  height: auto;
 }
   .page5 {
     height: 65vw;
@@ -3331,7 +3218,7 @@ flex: 1 1 calc(100% - 20px);
 
   .page7 {
     margin-bottom: 90vh;
-    height: 135vh;
+    height: auto;
   }
   .audio svg{
   /* background-color: #fff; */
@@ -3376,83 +3263,7 @@ flex: 1 1 calc(100% - 20px);
     margin-right: 5vw;
   }
 
-  .one5 .dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color: #818181;
-    /* background: #fff; */
-    width: 75vw;
-    height: 5vh;
-    /* justify-content: center; */
-    /* padding: 30px 8px 0px 0px; */
-    text-decoration: none;
-    /* font-size: 25px; */
-    transition: 0.3s;
-    margin-top: 2vh;
-    margin-left: 10vw;
-  }
-  
-  .one5 h4{
-    font-size: 5vw;
-    margin-left: -2vw;
-    margin-top: 8vw;
-  }
 
-  .power-line{
-    margin-top: 15vw;
-  }
-  
-  .one5 .dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    color: #818181;
-    /* background: #fff; */
-    width: 75vw;
-    height: 5vh;
-    /* justify-content: center; */
-    /* padding: 30px 8px 0px 0px; */
-    text-decoration: none;
-    font-size: 25px;
-    transition: 0.3s;
-    margin-top: 2vh;
-    margin-left: 3vw;
-  }
-
-  .button2
-  
-  .one5 h4{
-    font-size: 5vw;
-    margin-left: -1vw;
-    margin-top: -0.5vw;
-  }
-  
-  .audio h4{
-    height: 3vh;
-    width: 10vw;
-    margin-top: -2vw ;
-  }
-  
-  .audio svg{
-    height: 3vh;
-    width: 10vw;
-    /* margin-left: -0.2vw; */
-  }
-  
-  .power svg{
-    height: 3vh;
-    width: 10vw;
-  }
-  
-  .smart-wearables svg{
-    height: 3vh;
-    width: 10vw;
-  }
-
-  .power-line{
-    margin-top: 2vw;
-  }
 
 
   /* mkc jisne bhi chheda meine bnaya h */
@@ -3829,47 +3640,13 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .power-line{
-    margin-top: 15vw;
+    margin-top: 7vw;
   }
   
-  .one5 .dropdown {
-    width: 70vw;
-    height: 5vh;
-    font-size: 25px;
-    margin-top: 2vh;
-    margin-left: -3vw;
-  }
-  .one5 h4{
-    font-size: 3.5vw;
-    margin-left: 3.5vw;
-    margin-top: -2vw;
-  }
-  
-  .power-line{
-    margin-top: 2vw;
-  }
-  .one5 svg{
-    margin-bottom: 18vw;
-  }
   
 .sidenav .closebtn {
   font-size: 12vw;
 }
 
-
-.sidenav {
-  height: 100vh;
-  width: 0vw;
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  background-color: #000000;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-  color: white;
-  font-weight: bold;
-}
 
 }
