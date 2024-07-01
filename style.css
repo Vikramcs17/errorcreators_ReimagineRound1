@@ -3020,16 +3020,16 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .bg-speaker h2 {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 
   .bg-speaker h3 {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 
   .phone {
     margin-top: 7vw;
-    margin-left: 4vw;
+    margin-left: 10vw;
     width: 27vw;
     /* mix-blend-mode: overlay; */
   }
@@ -3039,8 +3039,8 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .bluetooth {
-    margin-top: 50vw;
-    margin-left: 32vw;
+    margin-top: 40vw;
+    margin-left: 10vw;
     width: 28vw;
     /* mix-blend-mode: overlay; */
   }
@@ -3050,7 +3050,7 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .battery {
-    margin-top: -120vw;
+    margin-top: -100vw;
     margin-left: 60vw;
     width: 30vw;
     /* mix-blend-mode: overlay; */
@@ -3088,9 +3088,9 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .beats {
-    margin-top: 15vw;
-    margin-left: 9vw;
-    width: 30vw;
+    margin-top: 9vw;
+    margin-left: 60vw;
+    width: 40vw;
     /* padding-right: -2vw; */
     /* mix-blend-mode: overlay; */
   }
@@ -3870,5 +3870,37 @@ flex: 1 1 calc(100% - 20px);
   color: white;
   font-weight: bold;
 }
+
+.phone{
+  margin-top: 3rem;
+  /* margin-left: 8rem; */
+}
+
+.bg-speaker h2{
+  font-size: 25px;
+}
+
+.bluetooth{
+  margin-top: 25rem;
+}
+
+.battery{
+  margin-top: -72rem;
+  width: 20rem;
+}
+
+.battery .andi{
+  margin-top: 4rem;
+}
+
+.battery .mandi{
+  margin-top: 4rem;
+}
+
+.beats{
+  margin-top: 6rem;
+}
+
+
 
 }
