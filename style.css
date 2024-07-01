@@ -1761,16 +1761,128 @@ header {
 .audio{
   display: flex;
   flex-direction: row;
-  /* align-content: center; */
+  align-content: center;
+}
+.smart-wearables{
+  display: flex;
+  flex-direction: row;
+
+}
+.smart-wearables svg{
+  position: relative;
+  width: 11vw;
+  height: 5vh;
+  left: 1vw;
+}
+.audio svg{
+  position: relative;
+  width: 11vw;
+  height: 5vh;
+  left: 1vw;
+  /* background: #000; */
+}
+.power svg{
+  position: relative;
+  width: 11vw;
+  height: 5vh;
+  left: 1vw;
 }
 .power{
   display: flex;
   flex-direction: row;
 }
-.smart-wearables{
+.one5 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.one5 .dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #818181;
+  /* background: #fff; */
+  width: 32vw;
+  height: 5vh;
+  /* justify-content: center; */
+  /* padding: 30px 8px 0px 0px; */
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  margin-top: 2vh;
+}
+
+.one5 h4{
+  font-size: 1.7vw;
+  margin-left: -2vw;
+  margin-top: -0.5vw;
+}
+
+.audio h4{
+  height: 3vh;
+  width: 10vw;
+  margin-top: 1vw ;
+}
+
+.audio svg{
+  height: 3vh;
+  width: 10vw;
+  /* margin-left: -0.2vw; */
+}
+
+.power svg{
+  height: 3vh;
+  width: 10vw;
+}
+
+.smart-wearables svg{
+  height: 3vh;
+  width: 10vw;
+}
+
+.one5 .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+ z-index: 1;
+ /* margin-left: 5vw; */
+}
+
+.one5 .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.audio-content{
+  padding: 15vw;
+} 
+
+.one5 .dropdown-content a:hover {
+  background-color: #d3fc06;
+  color: #000;
+}
+
+.one5 .dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 20;
+}
+
+/* .dropdown svg{
+  width: 50vw;
+  padding: 1vw;
+  height: 10vh;
+  background-color: #333;
+}
+LOGIN POPUP AND BUTTON  */
+
 .power-line{
   width: 100%;
   border: 2px solid white;
@@ -2204,6 +2316,7 @@ header {
 
   .page7 {
     margin-top: -3vw;
+    height: 125vh; 
   }
 
   .blog {
@@ -2486,8 +2599,8 @@ flex: 1 1 calc(100% - 20px);
 }
 
 .page7 {
-  margin-bottom: 75vh;
-  height: auto;
+  margin-bottom: 60vh;
+  height: 145vh;
 }
   .page5 {
     height: 65vw;
@@ -2509,6 +2622,49 @@ flex: 1 1 calc(100% - 20px);
   .page2 {
     margin-top: -4vw;
   }
+  .one5 .dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: #818181;
+  /* background: #fff; */
+  width: 40vw;
+  height: 5vh;
+  /* justify-content: center; */
+  /* padding: 30px 8px 0px 0px; */
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+  margin-top: 2vh;
+}
+
+.one5 h4{
+  font-size: 2.3vw;
+  margin-left: -1vw;
+  margin-top: -0.5vw;
+}
+
+.audio h4{
+  height: 4vh;
+  width: 10vw;
+  margin-top: 1vw ;
+}
+
+.audio svg{
+  height: 4vh;
+  width: 10vw;
+  /* margin-left: -0.2vw; */
+}
+
+.power svg{
+  height: 4vh;
+  width: 10vw;
+}
+
+.smart-wearables svg{
+  height: 4vh;
+  width: 10vw;
+}
 
 .button2 {
   --width: 11vw;
@@ -2548,9 +2704,86 @@ flex: 1 1 calc(100% - 20px);
 
 
 }
-
+/* @media only screen and (max-height: 790px) {
+  .page4 {
+    padding-top: 5vw;
+    height: 95vh;
+    margin-bottom: 75vh;
+  }
+  .fixed_footer {
+    padding-top: 5vw;
+    width: 100vw;
+    height: 65vh;
+  }
+  .page5{
+    height: 77vh;
+    font-size: 1.5vw;
+  }
+  .bluetooth {
+    position: relative;
+    top: -27vh;
+    width: 17vh;
+}
+.bluetooth img {
+  height: 4vw;
+}
+.battery{
+  margin-top: -16vw;
+}
+.beats{
+  margin-top: -55vw;
+}
+} */
 
 @media only screen and (max-width : 790px) {
+  .one5 .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #818181;
+    /* background: #fff; */
+    width: 44vw;
+    height: 5vh;
+    /* justify-content: center; */
+    /* padding: 30px 8px 0px 0px; */
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+    margin-top: 2vh;
+    
+  }
+  
+  .one5 h4{
+    font-size: 2.7vw;
+    margin-left: 0vw;
+  }
+  
+  .one5 .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(0, 0, 0);
+   z-index: 1;
+   /* margin-left: 5vw; */
+  }
+  
+  .one5 .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .audio-content{
+    padding: 15vw;
+  }
+  
+  .audio-h{
+    margin-top: 2vw;
+    padding: 2vw 0;
+    /* background: #000; */
+  }
 
   .login-modal-content{
     height:60rem; 
@@ -2592,7 +2825,13 @@ flex: 1 1 calc(100% - 20px);
   margin-top: 5rem;
 }
 
+
 }
+
+
+
+
+
 
 @media only screen and (max-width: 650px) {
   .smart-wearables svg {
@@ -2600,12 +2839,6 @@ flex: 1 1 calc(100% - 20px);
   }
   .swiper-parent .image-E img {
     margin-bottom: 10vh;
-}
-.swiper-button-next{
-  display: none;
-}
-.swiper-button-prev{
-  display: none;
 }
 .moving-text h1{
   font-size: 6vw;
@@ -2932,15 +3165,16 @@ flex: 1 1 calc(100% - 20px);
 
   .social-left {
     display: flex;
-    column-gap: 2vh;
+    /* column-gap: 2vh; */
+    gap: 5vh;
     height: 20vh;
-    width: 77vw;
+    width: 95vw;
     font-size: 4vw;
-  }
+}
 
   .social-left h2 {
     width: 37vw;
-    margin-left: 5vw;
+    margin-left: 4vw;
   }
 
   .footer-bottom {
@@ -2964,7 +3198,7 @@ flex: 1 1 calc(100% - 20px);
 
   .social-right img {
     height: 20vw;
-    width: 90vw;
+    width: 100%;
     margin-top: -8vw;
   }
 
@@ -2986,9 +3220,9 @@ flex: 1 1 calc(100% - 20px);
     position: relative;
     height: 25vh;
     width: 60vw;
-    right: 32vw;
+    right: 29vw;
     /* top: -5vh; */
-    bottom: 20vh;
+    bottom: 11vh;
   }
 
   .box-heading h1 {
@@ -3098,8 +3332,128 @@ flex: 1 1 calc(100% - 20px);
 
   .page7 {
     margin-bottom: 90vh;
-    height: auto;
+    height: 135vh;
   }
+  .audio svg{
+  /* background-color: #fff; */
+  margin-left: -15vw;
+  /* padding-right: 6vw; */
+}
+
+.smart-wearables svg{
+  height: 5vh;
+  width: 20vw;
+  margin-left: -15vw;
+  /* padding-right: 6vw; */
+  /* background: #000; */
+}
+  .power svg{
+    height: 5vh;
+    width: 20vw;
+    /* background-color: #000; */
+    margin-left: -15vw;
+  }
+
+  .one5 h4{
+    /* background-color: #3e8e41; */
+    margin-left: 0vw;
+    margin-top: 0vw;
+  }
+
+  .audio-h{
+    /* margin-top: 2vw; */
+    padding: 5vw 0vw;
+    /* background: #000; */
+    /* background: #000; */
+    margin-left: -22vw;
+  }
+
+  .sidenav svg{
+    width: 3vh;
+    /* padding: 1vw; */
+    margin-bottom: -3vh;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .one5 .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #818181;
+    /* background: #fff; */
+    width: 75vw;
+    height: 5vh;
+    /* justify-content: center; */
+    /* padding: 30px 8px 0px 0px; */
+    text-decoration: none;
+    /* font-size: 25px; */
+    transition: 0.3s;
+    margin-top: 2vh;
+    margin-left: 10vw;
+  }
+  
+  .one5 h4{
+    font-size: 5vw;
+    margin-left: -2vw;
+    margin-top: 8vw;
+  }
+
+  .power-line{
+    margin-top: 15vw;
+  }
+  
+  .one5 .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #818181;
+    /* background: #fff; */
+    width: 75vw;
+    height: 5vh;
+    /* justify-content: center; */
+    /* padding: 30px 8px 0px 0px; */
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.3s;
+    margin-top: 2vh;
+    margin-left: 3vw;
+  }
+
+  
+  .one5 h4{
+    font-size: 5vw;
+    margin-left: -1vw;
+    margin-top: -0.5vw;
+  }
+  
+  .audio h4{
+    height: 3vh;
+    width: 10vw;
+    margin-top: -2vw ;
+  }
+  
+  .audio svg{
+    height: 3vh;
+    width: 10vw;
+    /* margin-left: -0.2vw; */
+  }
+  
+  .power svg{
+    height: 3vh;
+    width: 10vw;
+  }
+  
+  .smart-wearables svg{
+    height: 3vh;
+    width: 10vw;
+  }
+
+  .power-line{
+    margin-top: 2vw;
+  }
+
 
   /* mkc jisne bhi chheda meine bnaya h */
   
@@ -3277,9 +3631,22 @@ flex: 1 1 calc(100% - 20px);
   .abc{
     margin-top: -10rem;
   }
-
+.footer-logo img{
+  height: 4vh;
 }
-
+/* .insta{
+  margin-left: 2vh;
+} */
+.facebook{
+  margin-left: 1vh;
+}
+.twitter{
+  margin-left: 1vh;
+}
+.youtube{
+  margin-left: 1vh;
+}
+}
 @media only screen and (max-width: 480px) {
   .preview{
     height: 40vh;
@@ -3475,13 +3842,33 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .power-line{
-    margin-top: 7vw;
+    margin-top: 15vw;
   }
   
+
+  
+  .power-line{
+    margin-top: 2vw;
+  }
   
 .sidenav .closebtn {
   font-size: 12vw;
 }
 
+
+.sidenav {
+  height: 100vh;
+  width: 0vw;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+  font-weight: bold;
+}
 
 }
