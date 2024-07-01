@@ -3809,4 +3809,49 @@ flex: 1 1 calc(100% - 20px);
     width: 6rem;
     margin-top: -2rem;
   }
+   .sidenav a {
+    padding: 20px 0px 6px 10px;
+    text-decoration: none;
+    font-size: 4vw;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav svg{
+    width: 2vh;
+    /* padding: 1vw; */
+    margin-bottom: -3vh;
+    height: auto;
+    margin-left: 8vw;
+    margin-right: 5vw;
+  }
+
+  .power-line{
+    margin-top: 15vw;
+  }
+  
+  .one5 .dropdown {
+    width: 70vw;
+    height: 5vh;
+    font-size: 25px;
+    margin-top: 2vh;
+    margin-left: -3vw;
+  }
+  .one5 h4{
+    font-size: 3.5vw;
+    margin-left: 3.5vw;
+    margin-top: -2vw;
+  }
+  
+  .power-line{
+    margin-top: 2vw;
+  }
+  .one5 svg{
+    margin-bottom: 18vw;
+  }
+  
+.sidenav .closebtn {
+  font-size: 12vw;
+}
 }
