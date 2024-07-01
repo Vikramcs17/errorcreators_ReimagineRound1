@@ -3859,7 +3859,7 @@ flex: 1 1 calc(100% - 20px);
 
 .sidenav {
   height: 100vh;
-  width: 10vw;
+  width: 0vw;
   position: fixed;
   z-index: 2;
   top: 0;
