@@ -19,7 +19,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-background: linear-gradient(135deg, #adad16 ,#FFF0B5);
+background: linear-gradient(135deg, #ecec09 ,#f0f0ac);
   /* background: black; */
   border-radius: 10px;
 }
