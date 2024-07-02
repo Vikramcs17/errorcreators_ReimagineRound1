@@ -849,8 +849,8 @@ button:hover {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
-  background-color: rgba(0, 0, 0, .8);
+  min-height: 100%;
+  background-color: rgba(17, 17, 17, 0.8);
   display: none;
   align-items: center;
   justify-content: center;
@@ -2167,6 +2167,20 @@ LOGIN POPUP AND BUTTON  */
   .fixed_footer {
     width: 100vw;
   }
+  .products-preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 66vw;
+    background-color: rgba(17, 17, 17, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:990;
+  }
+  
+  
 
   .products-container {
     grid-template-columns: repeat(2, 1fr);
@@ -2177,6 +2191,7 @@ LOGIN POPUP AND BUTTON  */
     /* position: absolute; */
     left: 4vw;
     height:40vh;
+    /* top: 10vw; */
   }
 
   .product {
@@ -3414,6 +3429,19 @@ flex: 1 1 calc(100% - 20px);
 
 
   /* mkc jisne bhi chheda meine bnaya h */
+
+  .products-preview {
+    position: fixed;
+    top: 0vw;
+    left: 0;
+    width: 100%;
+    min-height: 210vw;
+    background-color: rgba(17, 17, 17, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index:990;
+  }
   
   .preview{
     height: 45vh;
@@ -3483,12 +3511,6 @@ flex: 1 1 calc(100% - 20px);
     font-size: 3vw;
     margin-top: 10vw;
   }
-
-  .preview{
-    height: 60rem;
-    width: 60rem;
-  }
-
   
   .bcd1{
     /* background: #000; */
