@@ -3201,7 +3201,6 @@ flex: 1 1 calc(100% - 20px);
   .page2 {
     padding-top: 10vh;
     margin: 0 0vw;
-    width: 100vw;
   }
 
   .page1 .page2 .page3 .page4 .page5 {
@@ -4146,7 +4145,7 @@ display: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(20, 20, 20);
+  background-color: rgba(20, 20, 20, 0.487);
   border: none;
   font-weight: 600;
   display: flex;
@@ -4167,14 +4166,14 @@ display: none;
 }
 
 .svgIcon path {
-  fill: white;
+  fill: rgb(252, 251, 251);
 }
 
 .toup:hover {
   width: 140px;
   border-radius: 50px;
   transition-duration: 0.3s;
-  background-color: #E2FB03;
+  background-color: #e2fb0398;
   align-items: center;
 }
 
@@ -4188,7 +4187,7 @@ display: none;
   position: absolute;
   bottom: -20px;
   content: "Back to Top";
-  color: white;
+  color: rgb(235, 233, 233);
   /* transition-duration: .3s; */
   font-size: 0px;
 }
