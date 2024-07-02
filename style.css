@@ -2899,6 +2899,9 @@ flex: 1 1 calc(100% - 20px);
 
 
 @media only screen and (max-width: 650px) {
+.gotopbtn{
+  display: none;
+}
   .smart-wearables svg {
     width: 20vw;
   }
