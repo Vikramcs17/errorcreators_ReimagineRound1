@@ -1,4 +1,5 @@
 
+
 body {
   margin: 0;
   padding: 0;
@@ -686,6 +687,8 @@ button:hover {
   margin-right: 1vw;
 }
 
+
+
 @keyframes move {
   from {
     transform: translateX(0);
@@ -701,6 +704,16 @@ button:hover {
   height: 30rem;
   display: flex;
   justify-content: center;
+}
+
+.button1-wrapper .text{
+  font-weight: 600;
+  font-size: 1.5vw;
+  font-family: "Raleway", sans-serif;
+}
+
+.button1-wrapper .icon{
+  font-weight: 700;
 }
 
 
@@ -739,7 +752,7 @@ button:hover {
   height: 2vw;
   width: 8vw;
   border-radius: 2vw;
-  background-color: #E5C32F;
+  background-color: #e2fb03;
   text-align: center;
   align-items: center;
 }
@@ -886,7 +899,7 @@ button:hover {
 }
 
 .preview .buttons a {
-  font-size: 1.5rem;
+  font-size: 1.7vw;
   color: #020300;
   height: 3rem;
   width: 15rem;
@@ -895,10 +908,11 @@ button:hover {
   background-color: #e2fb03;
   text-align: center;
   border-radius: 2vw;
+  font-weight: 600 ;
 }
 
 .preview .buttons a:hover {
-  background: #444;
+  background: #cbd80b;
   color: #fff;
 }
 
@@ -926,22 +940,29 @@ button:hover {
   margin-top: 4rem;
 }
 
-.p1 .bcd h5{
-  margin-top: 3rem;
+
+.bcd h5{
+  color: #99fa1c;
+  font-size: 1.5vw;
+  margin-top: 2vw;
 }
 
 .bcd h3 {
   padding: 1vw 0;
   margin-top: 2vw;
-  font-size: 2vw;
+  font-size: 2.7vw;
 }
 
 .bcd h4 {
-  color: lightgreen;
-  font-size: 1.8vw;
+  color: rgb(0, 0, 0);
+  font-size: 1.3vw;
   margin-top: -2vw;
 }
-
+.bcd h6{
+  color: #99fa1c;
+  font-size: 1.5vw;
+  margin-top: 2vw;
+}
 .stars {
   margin-top: -1vw;
   padding: 1rem 0;
@@ -956,17 +977,17 @@ button:hover {
   color: #999;
 }
 
-.bcd p {
+/* .bcd p {
   line-height: 1.5;
   padding: 1rem 0;
   font-size: 1.6rem;
   color: #777;
   text-align: center;
-}
+} */
 
 .price {
   /* padding:1rem 0; */
-  font-size: 2.7vw;
+  font-size: 2.5vw;
   color: #000000;
   font-weight: 600;
   margin-top: -1vw;
@@ -2440,6 +2461,15 @@ LOGIN POPUP AND BUTTON  */
     height: 4vw;
     margin-top: -0.4rem;
   }
+  
+  .view-button{
+    width: 17vw;
+  }
+
+  .Qv{
+    font-size: 1.5vw;
+    font-weight: 500;
+  }
 
 }
 
@@ -3527,6 +3557,13 @@ flex: 1 1 calc(100% - 20px);
 .youtube{
   margin-left: 1vh;
 }
+.view-button{
+  width: 35vw;
+  height: 5vh;
+}
+.Qv{
+  font-weight: 600;
+}
 }
 @media only screen and (max-width: 480px) {
   .preview{
@@ -3571,7 +3608,7 @@ flex: 1 1 calc(100% - 20px);
     margin-right: 1vw;
   }
 
-  .bcd h2{
+  .p1 .bcd h2{
     font-size: 4vw;
   }
   
@@ -3585,6 +3622,9 @@ flex: 1 1 calc(100% - 20px);
     margin-top: 10vw;
   }
 
+  .p2 .bcd h6{
+    margin-top: 10vw;
+  }
   
   .bcd1{
     /* background: #000; */
@@ -3782,10 +3822,7 @@ flex: 1 1 calc(100% - 20px);
   margin-top: 6rem;
 }
 
-   .p1{
-    height: 55vh;
-    width: 90vw;
-  }
+
 
   .bcd{
     /* background: #c1ce07; */
@@ -3796,7 +3833,7 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .bcd h2{
-    font-size: 4vw;
+    font-size: vw;
   }
 
   .bcd h5{
@@ -3884,6 +3921,12 @@ flex: 1 1 calc(100% - 20px);
 
   .button2-wrapper .icon .bi{
     margin-top: 0.8rem;
+  }
+
+  .view-button{
+    width: 40vw;
+    /* height: vw; */
+    padding: 2vw;
   }
 
 
