@@ -815,7 +815,7 @@ button:hover {
  }
 
 
-.product h3 {
+ .product h3 {
   font-size: 1.2vw;
   display: flex;
   justify-content: space-between;
@@ -825,7 +825,6 @@ button:hover {
   /* padding: 1vw; */
   /* line-height: 0.5vw; */
 }
-
 /* .product h3:hover {
  text-decoration: underline;
 } */
@@ -1008,14 +1007,48 @@ button:hover {
 .price {
   /* padding:1rem 0; */
   font-size: 2.5vw;
-  color: #000000;
+  /* color: #000000; */
+  color: black;
   font-weight: 600;
   margin-top: -1vw;
   padding-bottom: 2vw;
   font-family: "Noto Sans", sans-serif;
 }
 
-.product-rate {
+.tmkcc{
+  display: flex;
+  gap: 0.5vw;
+  margin-top: -1vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+.discounted-price {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.9vw;
+  color: red;
+  font-weight: 600;
+  margin-top: 1vw;
+   /* padding-bottom: 2vw; */
+}
+
+.product-rate  {
+  font-family: "Noto Sans", sans-serif;
+  margin-left: 0.5vw;
+  color: #444;
+  font-size: 1.4vw;
+}
+.tmkccc{
+  display: flex;
+  gap: 1vw;
+  justify-content: flex-start;
+  align-items: center;
+}
+.sahil {
+  /* padding:1rem 0; */
+  font-size: 1.5vw;
+  color: red;
+  font-weight: 600;
+  padding-bottom: 2vw;
   font-family: "Noto Sans", sans-serif;
 }
 
@@ -1623,7 +1656,13 @@ a {
 }
 
 @media only screen and (max-width: 1465px) {
-
+  .discounted-price{
+    font-size: 1.5vw;
+    margin-top: 2vw;
+  }
+  .product-rate{
+    font-size: 2.5vw;
+  }
   .navbar1{
     display: none;
   }
@@ -2522,7 +2561,16 @@ LOGIN POPUP AND BUTTON  */
 
 
 @media only screen and (max-width: 991px) {
-
+.price{
+  font-size: 3vw;
+}
+.discounted-price{
+  font-size: 1.5vw;
+  margin-top: 2vw;
+}
+.product-rate{
+  font-size: 3vw;
+}
   .swiper-parent .image-E img{
     margin-bottom: 10vh;
   }
@@ -2899,6 +2947,27 @@ flex: 1 1 calc(100% - 20px);
 
 
 @media only screen and (max-width: 650px) {
+.discounted-price{
+  font-size: 3.5vw;
+  margin-top: 4vw;
+}
+.product-rate{
+  font-size: 5vw;
+}
+.tmkcc{
+  gap: 1.5vw;
+  margin-top: -3vw;
+}
+.sahil{
+  font-size: 3vw;
+  margin-top: 0.5vw;
+}
+.tmkccc{
+  gap: 1.5vw;
+}
+.price{
+  font-size: 5vw;
+}
 .gotopbtn{
   display: none;
 }
