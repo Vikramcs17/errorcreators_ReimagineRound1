@@ -2728,6 +2728,7 @@ flex: 1 1 calc(100% - 20px);
 
   .page2 {
     margin-top: -4vw;
+    width: 101vw;
   }
 
 
