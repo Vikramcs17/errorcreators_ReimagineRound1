@@ -3492,7 +3492,7 @@ flex: 1 1 calc(100% - 20px);
     width: 20vw;
     align-content: center;
     text-decoration: none;
-    background-color: #e2fb03;
+    background-color: #e5c32f;
     text-align: center;
     border-radius: 2vw;
     margin-top: -10vw;
@@ -3501,7 +3501,7 @@ flex: 1 1 calc(100% - 20px);
   .button1 {
     --width: 20vw;
     --height: 2.5vh;
-    --button-color: #e2fb03;
+    --button-color: #e5c32f;
     width: var(--width);
     height: var(--height);
     background: var(--button-color);
@@ -3636,6 +3636,10 @@ flex: 1 1 calc(100% - 20px);
     width: 75vw;
   }
 
+.view-button .Qv{
+  background-color: #e5c32f;
+
+}
   .preview img{
     height: 15vh;
     width: 30vw;
@@ -3893,7 +3897,7 @@ flex: 1 1 calc(100% - 20px);
     color: #020300;
     height: 2.5vh;
     width: 20vw;
-    background-color: #e2fb03;
+    background-color: #e5c32f;
     border-radius: 2vw;
     margin-top: -6vw;
   }
@@ -3901,7 +3905,7 @@ flex: 1 1 calc(100% - 20px);
   .button1 {
     --width: 20vw;
     --height: 2.5vh;
-    --button-color: #e2fb03;
+    --button-color: #e5c32f;
     border-radius: 2vw;
     margin-top: 2vw;
     transition: background 0.3s;
@@ -3937,9 +3941,10 @@ flex: 1 1 calc(100% - 20px);
   }
 
   .view-button{
-    width: 40vw;
+    width: 45vw;
     /* height: vw; */
     padding: 2vw;
+    
   }
 
   .price{
