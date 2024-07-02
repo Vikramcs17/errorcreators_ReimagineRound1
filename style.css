@@ -854,6 +854,7 @@ button:hover {
   display: none;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
   z-index:990;
 }
 
