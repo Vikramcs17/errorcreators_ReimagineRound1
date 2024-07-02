@@ -3961,5 +3961,9 @@ flex: 1 1 calc(100% - 20px);
 
   }
 
+    .fixed_footer{
+    margin-bottom: 1rem;
+  }
+
 
 }
