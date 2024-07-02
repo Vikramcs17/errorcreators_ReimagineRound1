@@ -167,3 +167,10 @@ function closeLoginPopup() {
           modal.style.display = "none";
       }
   }
+ var loader = document.querySelector("#loader")
+  setTimeout(function(){
+      loader.style.top = "-100%"
+  },4200)
+
+  swiperAnimation()
+  menuAnimation()
