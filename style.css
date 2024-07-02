@@ -1655,6 +1655,10 @@ a {
   display: none;
 }
 
+.container1 li:hover{
+  color: yellow;
+}
+
 @media only screen and (max-width: 1465px) {
   .discounted-price{
     font-size: 1.5vw;
@@ -2559,6 +2563,10 @@ LOGIN POPUP AND BUTTON  */
     /* padding: -3rem; */
   }
 
+  .container1 li:hover{
+    color: yellow;
+  }
+
 }
 
 
@@ -2825,6 +2833,10 @@ flex: 1 1 calc(100% - 20px);
   height: 23rem;
 }
 
+.container1 li:hover{
+  color: yellow;
+}
+
 
 }
 /* @media only screen and (max-height: 790px) {
@@ -2944,6 +2956,10 @@ flex: 1 1 calc(100% - 20px);
   z-index: -100;
   padding: -5rem;
   height: 23rem;
+}
+
+.container1 li:hover{
+  color: yellow;
 }
 
 
@@ -3734,6 +3750,10 @@ flex: 1 1 calc(100% - 20px);
 display: none;
 }
 
+.container1 li:hover{
+  color: yellow;
+}
+
 }
 @media only screen and (max-width: 480px) {
   .preview{
@@ -4062,6 +4082,10 @@ display: none;
 
   }
 
+  .container1 li:hover{
+    color: yellow;
+  }
+
 }
 
 
@@ -4211,6 +4235,7 @@ display: none;
 	50% {
 		stroke-dashoffset: 40.84;
 	}
+
 }
 
 .toup {
@@ -4259,7 +4284,7 @@ display: none;
   position: absolute;
   bottom: -20px;
   content: "Back to Top";
-  color: rgb(235, 233, 233);
+  color: rgb(7, 7, 7);
   /* transition-duration: .3s; */
   font-size: 0px;
 }
@@ -4292,3 +4317,4 @@ display: none;
 .social-icons .youtube:hover {
   filter: invert(28%) sepia(96%) saturate(7487%) hue-rotate(354deg) brightness(101%) contrast(104%);
 }
+
