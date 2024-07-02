@@ -1659,9 +1659,11 @@ a {
   .discounted-price{
     font-size: 1.5vw;
     margin-top: 2vw;
+    font-style: italic;
   }
   .product-rate{
     font-size: 2.5vw;
+    font-style: italic;
   }
   .navbar1{
     display: none;
@@ -2561,16 +2563,22 @@ LOGIN POPUP AND BUTTON  */
 
 
 @media only screen and (max-width: 991px) {
+
 .price{
   font-size: 3vw;
+  font-style: italic;
 }
 .discounted-price{
   font-size: 1.5vw;
+  font-style: italic;
   margin-top: 2vw;
 }
 .product-rate{
+  font-style: italic;
   font-size: 3vw;
 }
+.sahil{
+font-style: italic;}
   .swiper-parent .image-E img{
     margin-bottom: 10vh;
   }
@@ -2950,9 +2958,11 @@ flex: 1 1 calc(100% - 20px);
 .discounted-price{
   font-size: 3.5vw;
   margin-top: 4vw;
+  font-style: italic;
 }
 .product-rate{
   font-size: 5vw;
+  font-style: italic;
 }
 .tmkcc{
   gap: 1.5vw;
@@ -2961,12 +2971,14 @@ flex: 1 1 calc(100% - 20px);
 .sahil{
   font-size: 3vw;
   margin-top: 0.5vw;
+  font-style: italic;
 }
 .tmkccc{
   gap: 1.5vw;
 }
 .price{
   font-size: 5vw;
+  font-style: italic;
 }
 .gotopbtn{
   display: none;
@@ -3505,8 +3517,8 @@ flex: 1 1 calc(100% - 20px);
   }
   
   .preview{
-    height: 45vh;
-    width: 70vw;
+    height: 50vh;
+    width: 75vw;
   }
 
   .preview img{
@@ -3565,7 +3577,7 @@ flex: 1 1 calc(100% - 20px);
   
   .bcd h3{
     font-size: 5vw;
-    margin-top: 8vw;
+    margin-top: -4vw;
   }
 
   .bcd h4{
