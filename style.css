@@ -3201,6 +3201,7 @@ flex: 1 1 calc(100% - 20px);
   .page2 {
     padding-top: 10vh;
     margin: 0 0vw;
+    width: 100vw;
   }
 
   .page1 .page2 .page3 .page4 .page5 {
