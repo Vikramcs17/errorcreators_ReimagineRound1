@@ -4012,7 +4012,7 @@ display: none;
 .cart {
 	display: block;
 	margin: 0 auto 1.5em auto;
-	width: 0%; /* Adjust width to a percentage for responsiveness */
+	width: 20%; /* Adjust width to a percentage for responsiveness */
 	max-width: 200px; /* Set a maximum width to prevent excessive scaling */
 	height: auto; 
 }
