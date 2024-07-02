@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   /* background: rgb(250, 249, 246); */
-  background: black;
+  background: transparent;
   border-radius: 200vh;
 }
 
