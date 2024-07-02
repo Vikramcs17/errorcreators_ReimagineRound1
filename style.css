@@ -3957,12 +3957,13 @@ flex: 1 1 calc(100% - 20px);
     bottom: 0;
     z-index: -100;
     height: 3rem;
+    background-color: black;
   
 
   }
 
     .fixed_footer{
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
   }
 
 
