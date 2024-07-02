@@ -4190,3 +4190,24 @@ display: none;
   /* transform: translateY(-30px); */
   transition-duration: 0.3s;
 }
+.social-icons .social-icon {
+  transition: filter 0.3s;
+}
+
+
+.social-icons .instagram:hover {
+  filter: invert(29%) sepia(93%) saturate(6182%) hue-rotate(314deg) brightness(95%) contrast(106%);
+}
+
+
+.social-icons .facebook:hover {
+  filter: invert(25%) sepia(85%) saturate(7483%) hue-rotate(186deg) brightness(98%) contrast(102%);
+}
+
+.social-icons .twitter:hover {
+  filter: invert(50%) sepia(100%) saturate(2413%) hue-rotate(182deg) brightness(94%) contrast(98%);
+}
+
+.social-icons .youtube:hover {
+  filter: invert(28%) sepia(96%) saturate(7487%) hue-rotate(354deg) brightness(101%) contrast(104%);
+}
