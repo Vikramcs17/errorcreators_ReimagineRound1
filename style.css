@@ -1,12 +1,11 @@
-
-
-body {
+html,body {
   margin: 0;
   padding: 0;
   position: relative;
   font-family: "Raleway", sans-serif;
-
+  scroll-behavior: smooth;
 }
+
 
 body::-webkit-scrollbar {
   width: 0.5rem;
