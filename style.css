@@ -1449,7 +1449,7 @@ button:hover {
 
 .fixed_footer {
   width: 100%;
-  height: 600px;
+  height: 620px;
   background: #050505;
   position: fixed;
   left: 0;
@@ -1596,6 +1596,19 @@ a {
 
 .logo-resp {
   display: none;
+}
+
+
+.copyright h6{
+  margin-left: 2rem;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  padding: -5rem;
 }
 
 .navbar-responsive {
@@ -2471,6 +2484,18 @@ LOGIN POPUP AND BUTTON  */
     font-weight: 500;
   }
 
+  .copyright h6{
+    margin-left: 2rem;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+    /* padding: -3rem; */
+  }
+
 }
 
 
@@ -2708,6 +2733,19 @@ flex: 1 1 calc(100% - 20px);
   color: black;
 }
 
+.copyright h6{
+  margin-left: 2rem;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  padding: -5rem;
+  height: 23rem;
+}
+
 
 }
 /* @media only screen and (max-height: 790px) {
@@ -2814,6 +2852,19 @@ flex: 1 1 calc(100% - 20px);
 
 .bcd h5{
   font-size: 2rem;
+}
+
+.copyright h6{
+  margin-left: 2rem;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  padding: -5rem;
+  height: 23rem;
 }
 
 
@@ -3564,6 +3615,20 @@ flex: 1 1 calc(100% - 20px);
 .Qv{
   font-weight: 600;
 }
+
+.copyright h6{
+  margin-left: 2rem;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background: transparent;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+  padding: -5rem;
+  height: 23rem;
+}
+
 }
 @media only screen and (max-width: 480px) {
   .preview{
@@ -3880,6 +3945,19 @@ flex: 1 1 calc(100% - 20px);
   .price{
     font-size: 4.5vw;
     font-weight: 700;
+  }
+
+  .copyright h6{
+    margin-left: 2rem;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+    height: 1rem;
+
   }
 
 
