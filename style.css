@@ -4131,9 +4131,9 @@ display: none;
 
     z-index: 200;
     transform: translate(-50%, -50%);
-    letter-spacing: 4;
+    letter-spacing: 5;
     left: 50%;
-    top: 261vh;
+    top: 263vh;
     font-family: "Clip";
     text-transform: uppercase;
     font-size: 5vw;
